@@ -60,3 +60,22 @@
 
   // but when we use nono pri mitve datatypes for work then a reference or oringal value is gien to the user for work and when the user change the refernce code then the actually code also get changed
   //heap
+
+  //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-Strings-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
+
+   const name ="yash" ; const Hname =new String("yash")
+   const lastname ="dariyal"
+
+   //console.log(name + lastname + "50");console.log(`hello my ${Hname}${lastname}and my networth is 50 rs`)
+  
+  // String functions
+
+    const Subname="yash dariyal"
+    let gamename= Subname.charAt('3')
+    console.log(gamename);
+      console.log(Subname.indexOf('h'))
+      console.log(Subname.substring(1,4))//value cannot get reversed and cannot write negative value
+      const gne = Subname.slice(-8,1)//value can get reversed and we cna also write in the negative way
+     console.log(gne)
+      
+    
