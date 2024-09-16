@@ -70,12 +70,39 @@
   
   // String functions
 
-    const Subname="yash dariyal"
-    let gamename= Subname.charAt('3')
-    console.log(gamename);
-      console.log(Subname.indexOf('h'))
-      console.log(Subname.substring(1,4))//value cannot get reversed and cannot write negative value
-      const gne = Subname.slice(-8,1)//value can get reversed and we cna also write in the negative way
-     console.log(gne)
+    // const Subname="yash dariyal"
+    // let gamename= Subname.charAt('3')
+    // console.log(gamename);
+    //   console.log(Subname.indexOf('h'))
+    //   console.log(Subname.substring(1,4))//value cannot get reversed and cannot write negative value
+    //   const slice=Subname.slice(-8,4)
+    //    console.log(slice)//value can get reversed and we cna also write in the negative way
+    //    console.log(Subname.split("h")) 
+    //    const balance =new Number(2)
+    //    console.log(balance.toString().length) //conversion of number to string
+    //    const number= 124.5555
+    //    console.log(number.toPrecision(4));// used to get a precise number//
+       
+    //    const hundred = 100000
+    //    console.log(hundred.toLocaleString('en-IN'))// add pointer /comma in the value to understand the calue clearly
+
+    //---------------------------------MATHS --------------------------------------------//
+
+   // maths functions
+
+  //  console.log(maths.abs(-5)) returns a postitive value and converts a negative into positive
+  //  console.log(maths.round(4.2));
+  //  maths.ceil(3,4)
+  //  maths.floor(4,3)
+  //  maths.min(1,2)
+  //  maths.max(1,24,5,)       
+        
       
+    console.log(Math.random())//gives value bteween 0 and 1 only
+    console.log((Math.random()*10)+1)
+    console.log(Math.floor(Math.random()*10)+1)//by dividing it ot 10 it gives the value above 0 to 9 and if we want to get the value above 0  we can use  math.floor  by which we can take out he big value//
+
+    const max= 3
+    const min =1;
+    console.log(Math.floor(Math.random()*(max-min+1)+min))// by this we can get the value between 10 to 25//
     
