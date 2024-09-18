@@ -92,8 +92,8 @@
 
   //  console.log(maths.abs(-5)) returns a postitive value and converts a negative into positive
   //  console.log(maths.round(4.2));
-  //  maths.ceil(3,4)
-  //  maths.floor(4,3)
+  //  maths.ceil(3.4) --returns 4 if greater than 3
+  //  maths.floor(4.3)--returns 4 if greatrer than 4
   //  maths.min(1,2)
   //  maths.max(1,24,5,)       
         
@@ -106,16 +106,23 @@
     // const min =1;
     // console.log(Math.floor(Math.random()*(max-min+1)+min))// by this we can get the value between 10 to 25//
     
-    const Naam ="Yash"
-     console.log(Naam.toUpperCase());
-     console.log(Naam.indexOf("h"))
-     console.log(Naam.charAt(3))
-     console.log(Naam.substring(0,4))
-     console.log(Naam.slice(0,4))
-     console.log(Naam.slice(-2))
-     console.log(Naam.trim())
-     console.log(Naam.replace("Y","-"))
-     console.log(Naam.includes("Yash"))
-     const Flight = "Yash%20Dariyal"
-     console.log(Flight.split("%20"))
-     
+    // const Naam ="Yash"
+    //  console.log(Naam.toUpperCase());
+    //  console.log(Naam.indexOf("h"))
+    //  console.log(Naam.charAt(3))
+    //  console.log(Naam.substring(0,4))
+    //  console.log(Naam.slice(0,4))
+    //  console.log(Naam.slice(-2))
+    //  console.log(Naam.trim())
+    //  console.log(Naam.replace("Y","-"))
+    //  console.log(Naam.includes("Yash"))
+    //  const Flight = "Yash%20Dariyal"
+    //  console.log(Flight.split("%20"))
+
+    
+    const balance= 100.1111;
+    //  function
+    //  .toString()-converts any item into String
+    //  .tofixed(how many value you want after decimal)-takes how many value you want after decimal
+    console.log(balance.toPrecision(3))
+     2. .tolocalestring(en-in)
