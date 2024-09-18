@@ -98,11 +98,24 @@
   //  maths.max(1,24,5,)       
         
       
-    console.log(Math.random())//gives value bteween 0 and 1 only
-    console.log((Math.random()*10)+1)
-    console.log(Math.floor(Math.random()*10)+1)//by dividing it ot 10 it gives the value above 0 to 9 and if we want to get the value above 0  we can use  math.floor  by which we can take out he big value//
+    // console.log(Math.random())//gives value bteween 0 and 1 only
+    // console.log((Math.random()*10)+1)
+    // console.log(Math.floor(Math.random()*10)+1)//by dividing it ot 10 it gives the value above 0 to 9 and if we want to get the value above 0  we can use  math.floor  by which we can take out he big value//
 
-    const max= 3
-    const min =1;
-    console.log(Math.floor(Math.random()*(max-min+1)+min))// by this we can get the value between 10 to 25//
+    // const max= 3
+    // const min =1;
+    // console.log(Math.floor(Math.random()*(max-min+1)+min))// by this we can get the value between 10 to 25//
     
+    const Naam ="Yash"
+     console.log(Naam.toUpperCase());
+     console.log(Naam.indexOf("h"))
+     console.log(Naam.charAt(3))
+     console.log(Naam.substring(0,4))
+     console.log(Naam.slice(0,4))
+     console.log(Naam.slice(-2))
+     console.log(Naam.trim())
+     console.log(Naam.replace("Y","-"))
+     console.log(Naam.includes("Yash"))
+     const Flight = "Yash%20Dariyal"
+     console.log(Flight.split("%20"))
+     
