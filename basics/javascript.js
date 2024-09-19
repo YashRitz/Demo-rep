@@ -136,10 +136,10 @@
 // // and related many more function about date
 // // ______________________________________________ARRAYS_________________________________________________________________
 
-const arr =["areola",1,2,3,4]
-// or 
-const arr2 = new Array("areola",12,23,45)
-// console.log(arr[3])
+// const arr =["areola",1,2,3,4]
+// // or 
+// const arr2 = new Array("areola",12,23,45)
+// // console.log(arr[3])
 // console.log(arr2[2])
 
 // ------------------------------------------------Array functions--------------------------------------------------
@@ -162,8 +162,65 @@ const arr2 = new Array("areola",12,23,45)
 // console.log(`B ${arr}`)
 // console.log(arr)
 
+//______________________________________Array merging--------------------------
 
+// const heroes =["shaktimaan","naagraja","bilota"]
+// const avengers =[ "captain america","iron man",'wulkong']
+// // console.log(heroes.push(avengers))
+// // console.log(heroes)
+// const allheroes =heroes.concat(avengers)
+// console.log(allheroes)
+// let hinge =[...heroes,...avengers]
+// console.log(hinge);
 
+// const arr= [1,2,3,4,[5,6],78,[6,7,8,[90]]]
+// console.log(arr)
 
+// const newarr=arr.flat(Infinity)
+// console.log(newarr)
 
+// const another = Array.isArray(["yash"])// check whether it is an array or not
+// console.log(another)
+// const anotherarr = Array.from("yash")//used to make an element an array
+// console.log(anotherarr)
 
+// const repo = Array.from({class : 4}) //cannot make a array of an object ##interesting 
+// console.log(repo)
+
+//multiple arrays in an array
+// const names = "yash"
+// const him = "kin"
+// const and = "kin"
+// const anotherarr =Array.of(names,him,and)//multiple set of array + multiple strings as array
+// console.log(anotherarr);
+
+// ___________________________________________objects_________________________________________
+
+// const mysym = Symbol("key")//to access symbole in objects as a key
+// const resume = {
+//     name: "yash",
+//     [mysym]:"key1",//accessing symbol by only this way or it will act as a object
+//     "Fullname" : "Yash Dariyal",
+//     profession: "Media house",
+// }
+
+// console.log(resume.Fullname)//1 way of accesing object
+// console.log(resume["Fullname"])//2 way of accesing objects
+// console.log([mysym])
+
+// resume.profession ="Actor"//it is object a way to change
+// console.log(resume.profession)
+
+// Object.freeze(resume)//freezing the object  makes it unchangeable
+// resume.profession ="Actor and director"
+// console.log(resume)
+
+// resume.greetings = function(){  // defining a function in an object
+//     console.log(`hello there`)
+// }
+// console.log(resume.greetings())
+
+// resume.greeting = function(){ 
+//     console.log(`hello there,${this.name}`)  //${this} it is a element by which we can access the current object
+// }
+// console.log(resume.greeting())
