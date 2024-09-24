@@ -378,7 +378,57 @@ function loginuser(username ="sam") {//if you want a default value when the user
  
   function handlearray(anyarray){//by this we can add array to a function
     return anyarray[3]
-  // }
+  }
   // console.log(handlearray([//by this we can add / create an array
   //   12,55,22,44,22236,
   // ]))
+  
+
+//--------------------------------Scope of variables-----------------------------------------
+
+// var --is available both in global and block scope hence problematic
+// let -- is availble both in global and block but block scope value and global scope values differ
+// const-- is availble both in global and block but block scope value and global scope values differ and
+// but can not be changed again
+
+if(true){
+  //block scope
+}
+//full body -- global scope
+
+
+//----------------------------------------Closure------------------------
+
+if(true){//parent
+  let user = "king"
+  if(user =="king"){//child
+
+    const website = "yashgoggle.com"
+    console.log(website + user)
+  }
+  // console.log(website)
+}
+//child parent ko acess kar sakta hai bu parent child ko nhi kyuki child ke liye toh uskai parent he global scope hai na
+
+
+//____________________________________________This and Arrow Function____________________
+
+// this -- is a functiion used for knowing the current context of the block scope
+
+const one = { //it only works with object not singly with functions
+  username: "yash",
+  price : 999,
+  functiontwo() {
+    console.log(this.username + this.price)
+    console.log(this)
+  }
+}
+one.functiontwo()
+console.log(this)//in node the scope of this is global scope and hence do not have any values but in browser its shows the window propety which is callled the window scope/glbal scope  
+
+
+functiontwo() {
+  console.log(this.username + this.price)
+  console.log(this)
+}
+}sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
