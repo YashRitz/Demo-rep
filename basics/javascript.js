@@ -196,6 +196,10 @@
 
 // ___________________________________________objects_________________________________________
 
+//singleton-Generally are made from constructors
+//object .create
+
+//objects literals
 // const mysym = Symbol("key")//to access symbole in objects as a key
 // const resume = {
 //     name: "yash",
@@ -224,3 +228,157 @@
 //     console.log(`hello there,${this.name}`)  //${this} it is a element by which we can access the current object
 // }
 // console.log(resume.greeting())
+
+const tin = new Object //it is a singleton object made from constructor 
+
+//const tin = {} //it is non singleton object
+
+// console.log(tin)
+
+const obj = {
+    fullname: "king",
+    2 : {
+          lastname: "Dariyal",
+          3: {
+            middlename :"Singh"
+          }
+    }
+}
+//console.log(obj)
+
+
+// const obj4 = {obj1,obj2} //not a function for merging
+
+
+//object merging techniques
+const obj1 = {dp : "None" } //1
+const obj2 = {quote: "Design for the show not for the future"}
+//const obj4 = {obj1,obj2} //not a function for merging
+const obj4 = {...obj1,...obj2,} //spread method //1
+ const obj3 = Object.assign({},obj2,obj1);//2
+// console.log(obj3)
+
+
+
+//object inside an array
+const user = [
+  {
+    id: "1234",
+    location :{
+      navigate: "lucknow"}
+  }
+]
+// console.log(user[0].location)
+// console.log(Object.keys(obj));//to get all zero index keys
+// console.log(Object.values(user))//to get the values of all keys
+// console.log(Object.entries(user))//gives both key and values
+// console.log(obj.hasOwnProperty("fullname"))//to check whether the desired  value is therir or not
+
+// //for more function of object
+// define the object inconsole
+// const obj = {
+            
+// }
+// object de structre{way of defining an object}
+
+const morse = {
+  code:1,
+  code:2
+}
+// console.log(morse.code)
+//or
+const {code} = morse;// a waqy to define object
+// console.log(code)
+// or
+ const {code:cmd} = morse;
+//  console.log(cmd)
+
+ //--------------------------Api-----------------------------------------
+
+ {
+  operator:"yash"
+  coordinator:"bhola"
+  satisfies:"creator"
+ }
+ //------------------------------Functions ------------------------
+
+              //parameters- are the functions
+//  function add(number1,number2)
+//  {
+
+//   console.log(number1 + number2) //the value becomes undefined and does not get stored in the result as we have  printed the result and not stored it
+
+//  }
+
+
+//correct way to store result value
+//  function add(number1,number2)
+//  {
+
+//   // let result =(number1 + number2) //the value becomes undefined and does not get stored in the result as we have  printed the result and not stored it
+//   // return result;
+//   //or
+//   return number1 + number2
+
+//  }
+
+//  const result= add(2,3) //Arguments are the calling values
+//  console.log(`result : ${result}`
+//  )
+// function loginuser(username) {
+//   if(username===undefined){//in this situation the code sholud be true to run
+//     console.log(`please enter you gamer id`)
+//     return
+//   }
+ 
+//   return(` ${username} logged in`)
+// }
+
+
+// function loginuser(username) {
+//   if(username===undefined){//in this situation the code sholud be true to run
+//     console.log(`please enter you gamer id`)
+//     return
+//   }
+ 
+//   return(` ${username} logged in`)
+// }
+
+function loginuser(username ="sam") {//if you want a default value when the user gives nothing then we can igve it adefault value
+  if(!username){//in this situation the code sholud be false to run
+    console.log(`please enter you gamer id`)
+    return
+  }
+ 
+  return(` ${username} logged in`)
+}
+//  console.log(loginuser())//when nothing is given then it returns a undefined
+ 
+ function cartcalculator(...num){//...num -- is a rest operator whiuch takes multiple values in a function and convertsuii it in a array
+    return num
+ }
+//  console.log(cartcalculator(200,400,4000,5506)) 
+ 
+// --------------------Accessing object in afunction ------------------------------------
+
+//  const object1 ={
+//   username: "yash",
+//     price : 999
+//  }
+
+ function handleobject(anyobject) { 
+  return (`username is ${anyobject.username} and price is ${anyobject.price}`)
+ }
+
+  // console.log(handleobject(object1))
+  // // console.log(handleobject({ // by this we can overwrite the oject or we can create the object by using the function name handle object
+  //   username : "yash dariyal",//creating object by function name separately
+  //   price : 555
+  // }))
+ 
+  function handlearray(anyarray){//by this we can add array to a function
+    return anyarray[3]
+  // }
+  // console.log(handlearray([//by this we can add / create an array
+  //   12,55,22,44,22236,
+  // ]))
