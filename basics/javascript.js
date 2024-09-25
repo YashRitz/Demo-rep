@@ -463,14 +463,15 @@ const sub2 =(number1,number2) => {username:"yash khangta vlogs"}//to show object
 
 // ===========================IIFE(immediately invoked function expression)========================
 
-
+//Explicit function -which contain a return function statement 
 (function gigachad(rollno) {
   // console.log(`Your blue tooth device is ready to pair ${rollno}`)
 })(21);//to write two iife function togehter then we have to use semi colon to separeate them as it will show errors 
    // IIFE function doesnt know where to stop so it run all over as a result we have to use semicolon tostop it 
 
+   //implicit function
 ((name)=>{
-  // console.log(`your device is readt to pair ${name}`)
+  // console.log(`your device is readt to pair ${name}`) as this file doesn't contain return function as a result we say it as implicit function
 })("YASH")
 
 // ******************************************************************************************************
