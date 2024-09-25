@@ -458,3 +458,19 @@ const chai= () => ( "add water and boil")//when we uses paranthesis inplace of b
 
 const sub2 =(number1,number2) => {username:"yash khangta vlogs"}//to show object we have to use paranthesis
 // console.log(sub(5,9))
+
+
+
+// ===========================IIFE(immediately invoked function expression)========================
+
+
+(function gigachad(rollno) {
+  // console.log(`Your blue tooth device is ready to pair ${rollno}`)
+})(21);//to write two iife function togehter then we have to use semi colon to separeate them as it will show errors 
+   // IIFE function doesnt know where to stop so it run all over as a result we have to use semicolon tostop it 
+
+((name)=>{
+  // console.log(`your device is readt to pair ${name}`)
+})("YASH")
+
+// ******************************************************************************************************
