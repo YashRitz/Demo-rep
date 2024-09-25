@@ -404,7 +404,7 @@ if(true){//parent
   if(user =="king"){//child
 
     const website = "yashgoggle.com"
-    console.log(website + user)
+    // console.log(website + user)
   }
   // console.log(website)
 }
@@ -415,20 +415,46 @@ if(true){//parent
 
 // this -- is a functiion used for knowing the current context of the block scope
 
-const one = { //it only works with object not singly with functions
-  username: "yash",
-  price : 999,
-  functiontwo() {
-    console.log(this.username + this.price)
-    console.log(this)
-  }
-}
-one.functiontwo()
-console.log(this)//in node the scope of this is global scope and hence do not have any values but in browser its shows the window propety which is callled the window scope/glbal scope  
+// const one = { //it only works with object not singly with functions
+//   username: "yash",
+//   price : 999,
+//   functiontwo() {
+//     console.log(this.username + this.price)
+//     console.log(this)
+//   }
+// }
+// one.functiontwo()
+// //this function does work independently with only function it needs some object or array to show value
+// console.log(this)//In node the scope of this is global scope and hence shows empty {} but in browser its shows the window propety which is callled the window scope/glbal scope  
 
 
-functiontwo() {
-  console.log(this.username + this.price)
-  console.log(this)
+// function two()  {//node properties
+//   console.log(this)
+// }
+// two()
+
+// function two() {
+//   let username = "ritz"
+//   console.log(this.username)//cannot print value in a function until unless bagged by an object
+// }
+
+// two()
+
+// ________________=><=___________________________________________________________________arrow functions
+
+//Diefferent way to write arrow function-------------------
+const arrow = () => {//whenused braces then we have to use return function
+  return(this)
 }
-}sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+
+// console.log(arrow())
+//or
+const chai= () => ( "add water and boil")//when we uses paranthesis inplace of braces then its no tinportant to use return
+//  console.log(chai())
+//  or//
+
+ const sub =(number1,number2) => ({username:"yash khangta vlogs"})//to show object we have to use paranthesis
+//  console.log(sub(5,9))
+
+const sub2 =(number1,number2) => {username:"yash khangta vlogs"}//to show object we have to use paranthesis
+// console.log(sub(5,9))
